@@ -1,0 +1,592 @@
+
+.banner {
+      .row {
+          div {
+              border: 1px solid gray;
+              text-align: center;
+              height: 50px;
+              a {
+                height: 100%;
+                color: gray;
+                text-underline: none;
+                line-height: 50px;
+              }
+          }
+          div:nth-child(1) {
+            a {
+              position: relative;
+              img {
+                display: none;
+                position: absolute;
+                left: -5px;
+                top: 35px;
+              }
+              &:hover img {
+                display: block;
+                z-index: 66;
+              }
+            }
+          }
+          div:nth-child(4) {
+              a {
+                margin-left: 5px;
+              }
+          }
+      }
+  }
+
+  /*导航条部分*/
+  .wjs-nav {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    height: 80px;
+  }
+  .wjs-nav .navbar-brand {
+    color: #777;
+    span:nth-child(1) {
+      color: red;
+      font-size: 40px;
+    }
+    span:nth-child(2) {
+      color: #000;
+      font-size: 36px;
+    }
+  }
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+  }
+  .wjs-nav .navbar-brand:hover,
+  .wjs-nav .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+  }
+  .wjs-nav .navbar-text {
+    color: #777;
+  }
+
+  .wjs-nav .navbar-nav > li > a {
+    height: 80px;
+    color: #777;
+    line-height: 50px;
+    box-sizing: border-box;
+  }
+  .wjs-nav .navbar-nav > li > a:hover
+   {
+    color: #333;
+    border-bottom: 2px solid red;
+    background-color: transparent;
+  }
+  .wjs-nav .navbar-nav > .active > a,
+  .wjs-nav .navbar-nav > .active > a:hover,
+  .wjs-nav .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .wjs-nav .navbar-nav > .disabled > a,
+  .wjs-nav .navbar-nav > .disabled > a:hover,
+  .wjs-nav .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+  .wjs-nav .navbar-toggle {
+    border-color: #ddd;
+    margin-top:22px;
+  }
+  .wjs-nav .navbar-toggle:hover,
+  .wjs-nav .navbar-toggle:focus {
+    background-color: #ddd;
+  }
+  .wjs-nav .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
+  .wjs-nav .navbar-collapse,
+  .wjs-nav .navbar-form {
+    border-color: #e7e7e7;
+  }
+  .wjs-nav .navbar-nav > .open > a,
+  .wjs-nav .navbar-nav > .open > a:hover,
+  .wjs-nav .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  @media (max-width: 767px) {
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a {
+      color: #777;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #333;
+      background-color: transparent;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #555;
+      background-color: #e7e7e7;
+    }
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .wjs-nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      color: #ccc;
+      background-color: transparent;
+    }
+  }
+  .wjs-nav .navbar-link {
+    color: #777;
+  }
+  .wjs-nav .navbar-link:hover {
+    color: #333;
+  }
+  .wjs-nav .btn-link {
+    color: #777;
+  }
+  .wjs-nav .btn-link:hover,
+  .wjs-nav .btn-link:focus {
+    color: #333;
+  }
+  .wjs-nav .btn-link[disabled]:hover,
+  fieldset[disabled] .wjs-nav .btn-link:hover,
+  .wjs-nav .btn-link[disabled]:focus,
+  fieldset[disabled] .wjs-nav .btn-link:focus {
+    color: #ccc;
+  }
+
+
+
+  /*轮播图部分*/
+  .carousel-inner {
+    div {
+      a {
+        display: block;
+        height: 410px;
+        width: 100%;
+        &.image-1 {
+          background: url("../images/slide_01_2000x410.jpg") no-repeat center;
+        }
+        &.image-2 {
+          background: url("../images/slide_02_2000x410.jpg") no-repeat center;
+        }
+        &.image-3 {
+          background: url("../images/slide_03_2000x410.jpg") no-repeat center;
+        }
+        &.image-4 {
+          background: url("../images/slide_04_2000x410.jpg") no-repeat center;
+        }
+      }
+
+    }
+  }
+
+
+  /*支付信息部分*/
+
+  .play {
+    padding-top: 18px;
+    padding-left: 80px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .play .row>div {
+    height: 50px;
+
+    color: gray;
+    margin: 15px 0;
+  }
+
+  .myMedia {
+    margin-top: 15px;
+    &:hover {
+      color: red
+
+    }
+    &:hover a {
+      color: red
+
+    }
+  }
+  .myMedia:first-child {
+    margin-top: 0;
+  }
+  .myMedia,
+  .myMedia-body {
+    overflow: hidden;
+    zoom: 1;
+  }
+  .myMedia-body {
+    width: 10000px;
+    text-align: left;
+    padding-left: 40px;
+
+  }
+  .myMedia-object {
+    display: block;
+  }
+  .myMedia-object.img-thumbnail {
+    max-width: none;
+  }
+  .myMedia-right,
+  .myMedia > .pull-right {
+    padding-left: 10px;
+  }
+  .myMedia-left,
+  .myMedia > .pull-left {
+    padding-right: 10px;
+    position: relative;
+    a {
+      position: absolute;
+      left: 4px;
+      top: -5px;
+      font-size: 37px;
+      color: gray;
+    }
+
+  }
+  .myMedia-left,
+  .myMedia-right,
+  .myMedia-body {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .myMedia-middle {
+    vertical-align: middle;
+  }
+  .myMedia-bottom {
+    vertical-align: bottom;
+  }
+  .myMedia-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .myMedia-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+
+  /*预约界面*/
+
+  .book {
+    height: 60px;
+    padding: 20px 100px;
+    border-bottom: 1px solid #ccc;
+    .pull-left {
+      a {
+        color: red;
+      }
+      span {
+        color: #333;
+      }
+    }
+    .pull-right {
+      a {
+        color: gray;
+      }
+    }
+  }
+
+  /*投资部分*/
+ 
+  .wjs-invest {
+    border-bottom: 1px solid #ccc;
+
+  }
+  .wjs-invest > li {
+    float: left;
+    margin-bottom: -1px;
+    height: 42px;
+  }
+  .wjs-invest > li > a {
+    height: 100%;
+    margin-right: 2px;
+    line-height: 23px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    box-sizing: border-box;
+    color: gray;
+  }
+  .wjs-invest > li > a:hover {
+    border-color: #eee #eee #ddd;
+  }
+  .wjs-invest > li.active > a,
+  .wjs-invest > li.active > a:hover,
+  .wjs-invest > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border-bottom: 2px solid red;
+  }
+
+  /*单个投资卷面*/
+  .tab-content {
+    background: #fff;
+    a {
+      margin-left: 30px;
+    }
+  }
+
+  .tab-content:hover {
+    a {
+      text-decoration: none;
+
+    }
+
+  }
+
+  .ticket {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px  gray;
+    span {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      color: #fff;
+      font-size: 42px;
+    }
+    margin-top: 15px;
+    background: #f00;
+
+    .ticket-right {
+      &::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        background: #fff;
+        //box-shadow:  0 1px 1px 1px gray;
+        box-shadow:inset 0 -1px gray;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        bottom: -10px;
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        background: #fff;
+        //box-shadow: inset 0 1px 1px 1px gray;
+        box-shadow:inset 0 1px gray;
+      }
+      position: relative;
+      float: right;
+      height: 150px;
+      width: 97px;
+      text-align: center;
+      padding-top: 20px;
+      border-left:1px dashed #fff;
+      p {
+        color: white;
+        font: 900 14px/20px simsun;
+      }
+    }
+    .ticket-left {
+      height: 150px;
+      overflow: hidden;
+
+      h3 {
+        color: white;
+        text-align: center;
+        margin-top: 21px;
+        font: 900 20px/20px simsun;
+        height: 20px;
+        overflow: hidden;
+      }
+      p {
+        color: white;
+        font:900 14px/12px simsun;
+        height: 14px;
+        overflow: hidden;
+      }
+      div {
+        margin-bottom: 5px;
+      }
+      div:nth-of-type(2n) {
+        text-align: right;
+      }
+      div:nth-of-type(2n+1) {
+        text-align: left;
+      }
+
+    }
+  }
+  .bg {
+    background: #fff;
+    .ticket-left {
+      h3 {
+        color: gray;
+      }
+      p {
+        color: gray;
+      }
+    }
+    .ticket-right {
+      p {
+        color: gray;
+      }
+      border-left:1px dashed #ccc;
+    }
+
+  }
+
+
+  /*新闻部分*/
+  .new {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    h3 {
+      font-size: 24px;
+      padding: 15px 15px;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      &::before {
+        content:'';
+        width: 10px;
+        height: 10px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        bottom: -5px;
+        right: 0;
+      }
+    }
+
+
+    .my-tabs {
+      margin-top: 30px;
+      position: relative;
+
+       .line {
+         position: absolute;
+         left: 35px;
+         top: 0;
+         border: 1px dashed #ccc;
+         height: 80%;
+       }
+    }
+    .my-tabs > li {
+      float: left;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .my-tabs > li > a {
+      width: 70px;
+      height: 70px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      background: #ccc;
+      line-height: 50px;
+      text-align: center;
+      font-size: 40px;
+      color: #fff;
+    }
+    .my-tabs > li > a:hover {
+      background: red;
+    }
+
+    .my-tabs > li.active > a,
+    .my-tabs > li.active > a:hover,
+    .my-tabs > li.active > a:focus {
+      color: #fff;
+      cursor: default;
+      background-color: red;
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+    }
+
+    /*小屏幕时候在一行显示*/
+    @media (max-width: 768px) {
+
+      .my-tabs > li {
+        width: 25%;
+      }
+      .my-tabs {
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    .my-tabs.nav-justified {
+      width: 100%;
+      border-bottom: 0;
+    }
+    .my-tabs.nav-justified > li {
+      float: none;
+    }
+    .my-tabs.nav-justified > li > a {
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .my-tabs.nav-justified > .dropdown .dropdown-menu {
+      top: auto;
+      left: auto;
+    }
+    @media (min-width: 768px) {
+      .my-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+      }
+      .my-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+      }
+    }
+    .my-tabs.nav-justified > li > a {
+      margin-right: 0;
+      border-radius: 4px;
+    }
+    .my-tabs.nav-justified > .active > a,
+    .my-tabs.nav-justified > .active > a:hover,
+    .my-tabs.nav-justified > .active > a:focus {
+      border: 1px solid #ddd;
+    }
+    @media (min-width: 768px) {
+      .my-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+      }
+      .my-tabs.nav-justified > .active > a,
+      .my-tabs.nav-justified > .active > a:hover,
+      .my-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+      }
+    }
+    .my-content > .tab-pane {
+      display: none;
+    }
+    .my-content > .active {
+      display: block;
+    }
+    .my-content {
+      margin-top: 30px;
+      a {
+        display: block;
+        margin: 15px 20px;
+        color:grey;
+      }
+
+    }
+
+  }
+
+  /*底部部分*/
+  .foot {
+    text-align: center;
+    background: #f7f7f7;
+    h3 {
+      padding-top: 30px;
+    }
+    a {
+      font-size: 80px;
+      margin-left: 23px;
+      color: grey;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
